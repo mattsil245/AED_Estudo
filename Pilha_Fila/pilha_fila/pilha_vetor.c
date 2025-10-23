@@ -3,6 +3,7 @@
 
 #include "pilha_vetor.h"
 
+//Alocamos igual na dinamica, lista e vetor, final = 0
 Pilha * cria_pilha(int capacidade){
 
 	Pilha * pilha =  (Pilha *) malloc (sizeof(Pilha));
@@ -13,12 +14,14 @@ Pilha * cria_pilha(int capacidade){
 	return pilha;
 }
 
+//Mesma coisa
 void destroi(Pilha * pilha){
 
 	free(pilha->a);
 	free(pilha);
 }
 
+//Mesma coisa so que aqui imprimos ponteiro? 
 void imprime(Pilha * pilha){
 
 	int i;
@@ -33,11 +36,13 @@ void imprime(Pilha * pilha){
 	printf("\n");
 }
 
+//Mesma coisa
 int tamanho(Pilha * pilha){
 
 	return pilha->topo;
 }
 
+//Verifica se ainda tem espaco
 Boolean push(Pilha * pilha, Elemento e){
 
 	if(pilha->topo < pilha->capacidade){
