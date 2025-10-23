@@ -1,11 +1,14 @@
 #define FALSE 0
 #define TRUE 1
 
+//Talvez possamos implementar futuramente a ordenação dos elementos na lista duplamente ligada
 #define LISTA_ORDENADA
 
+//Apelidos continuam
 typedef int Boolean;
 typedef int Elemento;
 
+//Adição do no anterior
 typedef struct _no_ {
 
 	Elemento valor;
@@ -14,6 +17,7 @@ typedef struct _no_ {
 
 } No;
 
+//Mesma coisa
 typedef struct {
 
 	int tamanho;	
@@ -21,6 +25,7 @@ typedef struct {
 
 } ListaLigada;
 
+//Diferenças na inserção, caso do parametro indice
 ListaLigada * cria_lista();
 void destroi_lista(ListaLigada * lista);
 int tamanho(ListaLigada * lista);
