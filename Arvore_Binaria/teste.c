@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "arvore_binaria.h"
+#include "arvore_binaria_de_busca.h"
 
 int main(){
     ArvoreBinaria * arvore = criar_arvore();

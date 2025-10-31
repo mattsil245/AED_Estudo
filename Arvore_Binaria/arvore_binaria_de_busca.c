@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "arvore_binaria.h"
+#include "arvore_binaria_de_busca.h"
 
 ArvoreBinaria * criar_arvore()
 {
