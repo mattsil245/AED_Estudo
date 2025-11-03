@@ -1,0 +1,35 @@
+Percursos:
+
+In-Ordem: Ordem, Raiz ta no meio;
+Pré-Ordem: Ordem que os elementos são descobertos;
+Pós-Ordem: Ordem que os elementos estao finalizando.
+
+O percurso in-ordem é usado nas arvores binárias de buscas (ABB).
+
+Inserção em Arvore não ordenada:
+
+1. Aloco um novo no
+2. Atribuo o valor que quero inserir no novo no
+3. Penduro o no novo abaixo do no pai
+4. O filho original do pai, nao importa qual, se torna filho do novo no
+
+Alguns casos:
+
+1 - Embaixo de um no folha: Atribuo e endereco do novo no no lado que eu quiser.
+2 - No pai c/ 1 filho: Empurro o filho para filho do novo no e o mesmo como filho do no pai.
+3 - No pai c/ 2 filhos: A mesma coisa no anterior.
+
+Alguns pontos a se considerar:
+
+*Parecido no caso de listas ligadas.
+*Inserção de um novo elemento que vai se tornar raiz.
+
+Controle/Organização da arvore faz com que faça sentido uma arvore não ordenada.
+
+*A arvore mostrada pelo professor não aceita elementos repetidos, aplicar em ambas as arvores (teste);
+*No pai pode ser definido ou não, se definido ... comparar os lados ESQUERDO e DIREITO;
+*Função busca retorna um endereço de memória para auxiliar na inserção e remoção;
+*Antes de inserir, caso eu queira definir um pai para o meu elemento que eu quero inserir eu preciso
+    chamar a função busca para achar o endereco de memoria do no pai, retorna e passar no valor inserir;
+    if(busca(arvore, e)) == No * raiz caso o elemento e exista na arvore, coloco ! para evitar valores repetidos;
+

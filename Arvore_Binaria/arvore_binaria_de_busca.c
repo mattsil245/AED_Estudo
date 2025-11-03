@@ -24,8 +24,7 @@ No *criar_no(Elemento e)
         exit(1);
     }
     novo_no->e = e;
-    novo_no->filho_esquerdo = NULL;
-    novo_no->filho_direito = NULL;
+    novo_no->filho_esquerdo = novo_no->filho_direito = NULL;
     return novo_no;
 }
 
@@ -172,6 +171,15 @@ No *encontrar_menor(No *no_atual)
 {
     while(no_atual != NULL && no_atual->filho_esquerdo != NULL){
         no_atual = no_atual->filho_esquerdo;
+    }
+
+    return no_atual;
+}
+
+No *encontrar_maior(No *no_atual)
+{
+    while(no_atual != NULL && no_atual->filho_direito != NULL){
+        no_atual = no_atual->filho_direito;
     }
 
     return no_atual;

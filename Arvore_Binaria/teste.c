@@ -29,6 +29,11 @@ int main(){
     remover(arvore, 10);
     imprimir_arvore(arvore);
 
+    //printf("\n");
+
+    printf("Menor valor: %d\n", encontrar_menor(arvore->raiz)->e);
+    printf("Maior valor: %d\n", encontrar_maior(arvore->raiz)->e);
+
     liberar_arvore(arvore);
     return 0;
 }

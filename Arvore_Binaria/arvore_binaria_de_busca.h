@@ -31,7 +31,8 @@ int altura_arvore(ArvoreBinaria * arvore);
 int tamanho_arvore(ArvoreBinaria * arvore);
 //void liberar_nos_aux(No * no_atual);
 void liberar_arvore(ArvoreBinaria * arvore);
-//No * encontrar_menor(No * no_atual);
+No * encontrar_menor(No * no_atual);
+No *encontrar_maior(No *no_atual);
 //No * remover_no(No * raiz_atual, Elemento e);
 void remover(ArvoreBinaria * arvore, Elemento e);
 
